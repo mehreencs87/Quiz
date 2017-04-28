@@ -1,0 +1,10 @@
+
+<script src="https://cdn.auth0.com/js/lock/10.14/lock.min.js"></script>
+<script>
+  var lock = new Auth0Lock('BpHxUMaTIKOuLE6Y9BdqXh5EPYjkPCHB', 'mehreen--khan.auth0.com', {
+   
+    allowedConnections: ['Username-Password-Authentication','facebook'],
+    languageDictionary: {title:"Mehreen"},
+  });
+</script>
+<button onclick="lock.show();">Login</button>
