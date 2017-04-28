@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Auth0JS</title>
+  </head>
+  <body>
+  <div  style="width:200px; text-align: center">  
+    <input type="button" class="login-google"  value="Google" >
+  
+	<script src="https://cdn.auth0.com/js/auth0/8.0.4/auth0.min.js"></script>
+    <script type="text/javascript" src= "auth0.min.js"> 
+		var webAuth = new auth0.WebAuth({
+        domain: 'mehreen--khan.auth0.com',
+        redirectUri: window.location.href,
+        clientID: 'BpHxUMaTIKOuLE6Y9BdqXh5EPYjkPCHB',    
+      });
+
+$('.login-google').click(function (e) {
+      e.preventDefault();
+      webAuth.authorize({ connection: 'google' });
+    });
+	</script>
+	</body>
+</html>
